@@ -1,0 +1,22 @@
+import 'package:firebase/ToDoTile/ToDoTile.dart';
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(Myapp());
+}
+
+class Myapp extends StatelessWidget {
+  const Myapp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      theme: ThemeData(
+        primarySwatch: Colors.green,
+      ),
+      debugShowCheckedModeBanner: false,
+      home: TodoListScreen(),
+    );
+  }
+}
+
